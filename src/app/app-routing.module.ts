@@ -7,6 +7,7 @@ import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 
 const routes: Routes = [
   //{ path: 'dashboard', component: DashboardComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'mahasiswa', component:MahasiswaComponent }
 ];
 
 @NgModule({

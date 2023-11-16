@@ -14,7 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-
+import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,11 +28,13 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ContentComponent,
     FooterComponent,
     Dashboard2Component,
-    Dashboard3Component
+    Dashboard3Component,
+    MahasiswaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
