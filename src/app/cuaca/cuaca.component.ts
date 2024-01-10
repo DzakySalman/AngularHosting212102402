@@ -74,7 +74,7 @@ export class CuacaComponent implements OnInit, AfterViewInit{
   }
 
   bind_table1() : void {
-    this.http.get("http://api.openweathermap.org/data/2.5/forecast?id=1630789&appid=91ad02eb393ead013a48f7615e09936d")
+    this.http.get("https://api.openweathermap.org/data/2.5/forecast?id=1630789&appid=91ad02eb393ead013a48f7615e09936d")
     .subscribe((data: any) => {
       console.log(data);
 
